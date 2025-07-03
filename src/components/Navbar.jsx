@@ -1,0 +1,31 @@
+import React from "react";
+import { assets } from "../assets/assets";
+import { Container, Row, Col, Button } from "react-bootstrap";
+
+const Navbar = () => {
+  return (
+    <Container fluid className="py-3">
+      <Row className="align-items-center">
+        <Col xs={8} sm={6} md={4} lg={3}>
+          <img
+            src={assets.CodersLogo}
+            alt="Logo"
+            className="logo-class me-2"
+            style={{ height: "50px", width: "auto" }}
+          />
+          <img
+            src={assets.CodersLettermark}
+            alt="Lettermark"
+            className="lettermark-class"
+            style={{ height: "35px", width: "auto" }}
+          />
+        </Col>
+        <Col xs={4} sm={6} md={8} lg={9} className="text-end">
+          <Button variant="primary">Join us!</Button>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default Navbar;
