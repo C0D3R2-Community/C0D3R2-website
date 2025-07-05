@@ -6,17 +6,17 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <Container className="text-center py-5">
-      <div className="border border-dark border-dotted d-inline-block px-3 py-1 mb-4 rounded">
-        <h5 className="m-0">Contact us</h5>
+    <Container className="text-center">
+      <div className="d-flex flex-column align-items-center justify-content-center mb-2">
+        <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}>Contact us</div>
       </div>
 
-      <div className="d-flex justify-content-center gap-3 mb-2">
+      <div className="d-flex justify-content-center gap-1 mb-1">
         <MdEmail size={30} />
         <FaWhatsapp size={30} />
       </div>
 
-      <p className="text-muted mb-3">leave a message · feedback · request</p>
+      <p className="text-muted mb-1">leave a message · feedback · request</p>
 
       <Form>
         <Form.Group className="mb-3 d-flex flex-column align-items-center">
@@ -31,13 +31,13 @@ const ContactUs = () => {
               resize: "none",
             }}
           />
-          <Button variant="primary" size="sm" className="mt-2 float-end">
+          <Button variant="primary" size="sm" className="mt-1 float-end">
             Send
           </Button>
         </Form.Group>
       </Form>
 
-      <div className="mt-4 text-muted small">
+      <div className="mt-5 text-muted small">
         <a href="#" className="text-decoration-none mx-2">
           About us
         </a>

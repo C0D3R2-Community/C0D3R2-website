@@ -11,16 +11,17 @@ const JoinUs = () => {
 
   return (
     <>
-      <Container className="text-center py-5 mt-5">
-        <h3 className="border border-dark border-2 border-dotted d-inline-block px-3 py-2 mb-3">
-          <strong>Join us!</strong>
-        </h3>
+      <Container className="text-center mt-3">
+        <div className="d-flex flex-column align-items-center justify-content-center mb-2">
+          <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}>Join us</div>
+        </div>
         <p>Interested in tech? Everyone is welcome!</p>
-        <div className="d-flex justify-content-center align-items-center mb-4 flex-wrap gap-2">
+        <div className="d-flex justify-content-center align-items-center mb-1 flex-wrap gap-2">
           <span>Fill the Membership Form</span>
           <Button variant="primary">Join us!</Button>
         </div>
-        <Row className="justify-content-center g-2">
+        <div style = {{padding: "10px", width: "auto", display: "flex", justifyContent: "center", alignContent: "center" }} className="mb-3">
+        <Row className="justify-content-center g-1 w-50">
           {roles.map((role, idx) => (
             <Col key={idx} xs="auto">
               <Button variant="outline-primary" size="sm">
@@ -29,6 +30,7 @@ const JoinUs = () => {
             </Col>
           ))}
         </Row>
+        </div>
         <div className="">
           <div>
             <img
@@ -36,8 +38,6 @@ const JoinUs = () => {
               alt="Hands illustration"
               className="img-fluid"
             />
-                    <div className="text-center w-30 p-3 bg-dark rounded h-30 m-0"></div>
-
           </div>
         </div>
 

@@ -66,3 +66,69 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.custom-primary-color-1 {
+  color: #3121E3;
+}
+
+.app-container {
+  position: relative; 
+  min-height: 100vh; 
+}
+
+.vertical-line {
+  position: fixed;
+  top: 0;
+  left: 50%; 
+  height: 100vh;
+  border-left: 2px dashed #000; 
+  z-index: 1; 
+}
+
+.left-line {
+  left: 20px; 
+}
+
+.right-line {
+  right: 20px;
+  left: auto; 
+}
+
+.horizontal-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 2px dashed #000; 
+  z-index: 1;
+}
+
+/* from top lines */
+.top-line {
+  top: 20px; 
+}
+.top-line-double {
+  top: 110px; 
+}
+.section-separator-line-1 {
+  top: 750px; 
+}
+.section-separator-line-2 {
+  top: 2370px; 
+}
+
+/* from bottom lines */
+.bottom-line {
+  bottom: 20px; 
+}
+.bottom-line-double {
+  bottom: 75px;
+}
+.section-separator-line-3 {
+  bottom: 680px; 
+}
+.section-separator-line-4 {
+  bottom: 850px; 
+}
+.section-separator-line-4 {
+  bottom: 1200px; 
+}

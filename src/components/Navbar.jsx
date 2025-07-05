@@ -4,13 +4,15 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Navbar = () => {
   return (
-    <Container fluid className="py-3">
+    <Container fluid className="py-2">
       <Row className="align-items-center">
-        <Col xs={8} sm={6} md={4} lg={3}>
+        <Col xs={8} sm={6} md={4} lg={3}
+          style={{ display: "flex", alignItems: "center"}}
+        >
           <img
             src={assets.CodersLogo}
             alt="Logo"
-            className="logo-class me-2"
+            className="logo-class"
             style={{ height: "50px", width: "auto" }}
           />
           <img

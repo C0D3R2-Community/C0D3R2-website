@@ -29,53 +29,40 @@ const statsData = [
   },
 ];
 
+
 const CodersActivities = () => {
+
+    const statItem = statsData.map((stat, idx) => (
+      <div className="text-center p-1 border rounded d-flex justify-content-between align-items-center" /* style = {{width: "200px"}} */>
+        <div>
+          <h1 className="" style={{ color: "#3121E3" }}>
+            {stat.number}
+          </h1> 
+          <small className="text-muted" style={{ whiteSpace: "pre-line" }}>
+            {stat.label}
+          </small>
+        </div>
+      </div>
+    ));
+
   return (
-    <Container className="text-center py-5">
-      <div className="border border-dark border-dotted d-inline-block px-3 py-1 mb-4 rounded">
-        <h5 className="m-0">
-          <span style={{ color: "#3b38ff" }}>@C0D3R2</span> in numbers
-        </h5>
+    <Container className="text-center pt-4">
+      <div className="d-flex flex-column align-items-center justify-content-center mb-2">
+        <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}> <span className="fw-bold custom-primary-color-1">@C0D3R2</span> in numbers</div>
       </div>
 
-      <Row className="justify-content-center g-4">
-        {statsData.map((stat, idx) => (
-          <Col xs={10} sm={6} md={4} lg={3} key={idx}>
-            <div className="d-flex align-items-center justify-content-start gap-2">
-              <div
-                style={{
-                  width: "5px",
-                  height: "40px",
-                  backgroundColor: stat.color === "blue" ? "#3b38ff" : "#000",
-                }}
-              />
-              <div>
-                <h5 className="mb-1" style={{ color: "#3b38ff" }}>
-                  {stat.number}
-                </h5>
-                <small
-                  className="text-muted"
-                  style={{ whiteSpace: "pre-line" }}
-                >
-                  {stat.label}
-                </small>
-              </div>
-              <div
-                style={{
-                  width: 0,
-                  height: 0,
-                  borderTop: "20px solid transparent",
-                  borderBottom: "20px solid transparent",
-                  borderLeft: `20px solid ${
-                    stat.color === "blue" ? "#3b38ff" : "#000"
-                  }`,
-                  marginLeft: "5px",
-                }}
-              />
-            </div>
-          </Col>
-        ))}
-      </Row>
+      <div
+        className="d-grid"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(5, 200px)",
+          justifyContent: "center",
+          gap: "10px", 
+          alignItems: "stretch",
+        }}
+      >
+        {statItem}
+      </div>
     </Container>
   );
 };

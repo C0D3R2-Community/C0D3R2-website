@@ -1,0 +1,16 @@
+
+
+@use "bootstrap/scss/bootstrap" with (
+  $primary: #3121E3,
+  $spacers: (
+    1: 20px,
+    2: 40px,
+    3: 60px,
+    4: 100px,
+    5: 150px,
+  ),
+  $gutters: (
+    1: 20px,
+    2: 40px
+  )
+);
