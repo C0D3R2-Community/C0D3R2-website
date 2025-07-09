@@ -20,9 +20,11 @@ const Header = () => {
                         research, we empower each other through knowledge-sharing and
                         future-focused development.
                     </p>
-                    <Button variant="dark" className="join-button text-light border rounded">
-                        Join us!
-                    </Button>
+                    <a href = "https://forms.gle/esmjcd8B418bSfp87" target="_blank" rel="noopener noreferrer">
+                        <Button variant="dark" className="join-button text-light border rounded">
+                            Join us!
+                        </Button>
+                    </a>
                 </Col>
                 <Col xs={12} md={6} className="text-center">
                     <Image

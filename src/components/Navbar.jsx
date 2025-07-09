@@ -23,7 +23,7 @@ const Navbar = () => {
           />
         </Col>
         <Col xs={4} sm={6} md={8} lg={9} className="text-end">
-          <Button variant="primary">Join us!</Button>
+        <a href = "https://forms.gle/esmjcd8B418bSfp87" target="_blank" rel="noopener noreferrer"><Button variant="primary">Join us!</Button></a>
         </Col>
       </Row>
     </Container>

@@ -46,7 +46,7 @@ const CodersActivities = () => {
     ));
 
   return (
-    <Container className="text-center pt-4">
+    <Container id = "ournumbers" className="text-center pt-4">
       <div className="d-flex flex-column align-items-center justify-content-center mb-2">
         <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}> <span className="fw-bold custom-primary-color-1">@C0D3R2</span> in numbers</div>
       </div>

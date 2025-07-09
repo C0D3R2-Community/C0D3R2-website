@@ -38,7 +38,7 @@ const AboutUs = () => {
   ));
 
   return (
-    <>
+    <div id = "aboutus">
       <div className="d-flex flex-column align-items-center justify-content-center mt-4 mb-2">
         <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}>About us</div>
       </div>
@@ -89,7 +89,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
