@@ -33,7 +33,7 @@ const statsData = [
 const CodersActivities = () => {
 
     const statItem = statsData.map((stat, idx) => (
-      <div className="text-center p-1 border rounded d-flex justify-content-between align-items-center" /* style = {{width: "200px"}} */>
+      <div key = {stat.label} className="text-center p-1 border rounded d-flex justify-content-between align-items-center" /* style = {{width: "200px"}} */>
         <div>
           <h1 className="" style={{ color: "#3121E3" }}>
             {stat.number}
@@ -55,7 +55,7 @@ const CodersActivities = () => {
         className="d-grid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(5, 200px)",
+          gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
           justifyContent: "center",
           gap: "10px", 
           alignItems: "stretch",

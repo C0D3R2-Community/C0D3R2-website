@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Header = () => {
     return (
-        <Container className="header mt-5">
+        <Container className="header mt-5 px-3">
             <Row className="align-items-center">
                 <Col xs={12} md={6} className="mb-4 mb-md-0">
                     <div style = {{border: "2px dashed black", padding: "10px", width: "180px"}} className="mb-1">

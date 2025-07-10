@@ -43,33 +43,32 @@ const AboutUs = () => {
         <div style={{ border: "2px dashed black", padding: "10px", width: "auto" }}>About us</div>
       </div>
 
-      <div className="container mb-1">
-        <div className="d-flex flex-column align-items-center justify-content-center mt-3">
-          <div>
-            <h2 className="font-weight-bold text-center custom-primary-color-1 ">
-              Values and cultures
-            </h2>
-            <div
-              className="d-grid"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "20px",
-              }}
-            >
-              {valuesList}
-            </div>
+      <div className="container mb-1 px-3">
+        <div className="text-center">
+          <h2 className="font-weight-bold custom-primary-color-1">
+            Values and cultures
+          </h2>
+          <div
+            className="d-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              justifyContent: "center",
+              gap: "20px",
+            }}
+          >
+            {valuesList}
           </div>
         </div>
       </div>
 
       <div className="container mt-1 d-flex flex-column justify-content-center align-items-center">
-        <div style={{ width: "1230px" }}> 
+        <div className="w-100 px-3"> 
           <h2 className="font-weight-bold text-center custom-primary-color-1 ">
             Vision for the future
           </h2>
           <div style = {{display: "flex", justifyContent: "center", alignItems: "center"}}>
-          <p className="" style={{ textAlign: "center", width: "45%"}}>
+          <p className="mx-auto" style={{ maxWidth: "500px", textAlign: "center" }}>
             <strong className="font-weight-bold custom-primary-color-1 ">@C0D3R2</strong> is more than a
             community. It is a future innovation powerhouse. With time, commitment,
             and resources, it aims to:
@@ -79,7 +78,7 @@ const AboutUs = () => {
             className="d-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(4, 300px)",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               justifyContent: "center",
               gap: "10px", 
               alignItems: "stretch",

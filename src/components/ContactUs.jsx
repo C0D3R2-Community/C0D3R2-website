@@ -64,7 +64,8 @@ const ContactUs = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             style={{
-              width: "300px",
+              width: "100%",
+              maxWidth: "400px",
               border: "2px solid #333",
               borderRadius: "8px",
               resize: "none",
@@ -76,15 +77,22 @@ const ContactUs = () => {
         </Form.Group>
       </Form>
 
-      <div className="mt-5 text-muted small">
+      <div 
+        className="mt-5 text-muted small text-nowrap d-flex justify-content-center align-items-center"
+        style={{
+          whiteSpace: "nowrap",
+          fontSize: "0.85rem",
+          padding: "0 10px"
+        }}
+      >
         <a href="#aboutus" className="text-decoration-none mx-2">
           About us
         </a>
-        |
+        <span>|</span>
         <a href="#joinus" className="text-decoration-none mx-2">
           Join us
         </a>
-        |
+        <span>|</span>
         <a href="#ournumbers" className="text-decoration-none mx-2">
           Numbers
         </a>
