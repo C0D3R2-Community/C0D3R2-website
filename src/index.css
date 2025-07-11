@@ -45,7 +45,7 @@
   top: 750px; 
 }
 .section-separator-line-2 {
-  top: 2700px; 
+  top: 2645px; 
 }
 
 /* from bottom lines */
@@ -75,6 +75,12 @@
   padding-right: 1rem;
 }
 
+@media (max-width: 1399px) {
+  .section-separator-line-2 {
+    top: 2700px; 
+  }
+}
+
 @media (max-width: 1199px) {
   .section-separator-line-2 {
     top: 3035px; 
@@ -84,7 +90,7 @@
   }
 }
 
-@media (max-width: 948px) {
+@media (max-width: 991px) {
   .section-separator-line-1 {
     top: 830px; 
   }
